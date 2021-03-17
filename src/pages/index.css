@@ -1,2 +1,7 @@
 @import "../vendor/normalize.css";
+@import url("../vendor/fonts/fonts.css");
+@import "../blocks/body/body.css";
+@import "../blocks/page/page.css";
+@import "../blocks/header/header.css";
+@import "../blocks/header/__description/header__description.css";
 @import "../blocks/spinner/spinner.css";
