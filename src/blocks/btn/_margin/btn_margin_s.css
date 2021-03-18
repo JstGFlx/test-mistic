@@ -1,0 +1,15 @@
+.btn_margin_s {
+  margin: 0 auto 20px;
+}
+
+@media (min-width: 321px) {
+  .btn_margin_s {
+    margin: 0 auto calc(20px + (35 - 20) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .btn_margin_s {
+    margin: 0 auto 35px;
+  }
+}

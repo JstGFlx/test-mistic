@@ -8,9 +8,8 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <title>Дата смерти</title>
@@ -18,12 +17,34 @@
   <body class="body">
     <div class="page">
       <header class="header">
-        <p class="header__description">
+        <p class="header__title text text_type_s text_color_gray">
           Лучшие астрологи и экстрасенсы Румынии
         </p>
       </header>
       <main>
-        <section class="forecast"></section>
+        <section class="forecast">
+          <p class="forecast__title text text_color_gray">
+            Точность прогноза: 97%
+          </p>
+          <div class="forecast__image"></div>
+          <p class="forecast__text text text_type_m text_color_yellow">
+            Вас беспокоит вопрос о том,
+            <span class="to-upper-case"
+              >когда Вы покинете этот Мир и при каких обстоятельствах?
+            </span>
+          </p>
+          <div class="forecast__container">
+            <button class="btn btn_size_m btn_color_yellow btn_margin_s">
+              Да
+            </button>
+            <button class="btn btn_size_m btn_color_yellow btn_margin_s">
+              Нет
+            </button>
+          </div>
+          <p class="forecast__note text text_type_s text_color_gray">
+            Онлайн предсказание
+          </p>
+        </section>
         <section class="advice"></section>
         <section class="evidence"></section>
         <section class="prediction"></section>

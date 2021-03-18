@@ -1,0 +1,79 @@
+.forecast {
+  position: relative;
+}
+
+.forecast::after {
+  content: '';
+  position: absolute;
+  width: 382px;
+  height: 402px;
+  top: -49px;
+  right: -41px;
+  background-size: cover;
+  background-image: url('../../images/blik.png');
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+@media (min-width: 396px) {
+  .forecast::after {
+    background-image: url('../../images/blik-l.png');
+    top: -73px;
+    right: -230px;
+    width: 964px;
+    height: 1000px;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 396px) {
+  .forecast::after {
+    background-image: url('../../images/blik-l.png');
+    top: -73px;
+    right: -230px;
+    width: 964px;
+    background-size: contain;
+  }
+}
+
+@media (min-width: 768px) {
+  .forecast::after {
+    top: -83px;
+    right: -204px;
+    width: 1139px;
+  }
+}
+
+@media (min-width: 906px) {
+  .forecast::after {
+    right: -133px;
+    top: -115px;
+    width: 1400px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .forecast::after {
+    right: -191px;
+    top: -167px;
+    width: 1672px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .forecast::after {
+    right: -66px;
+    top: -143px;
+    width: 1672px;
+  }
+}
+
+@media (min-width: 1667px) {
+  .forecast::after {
+    width: 1920px;
+    height: 1098px;
+    background-image: url('../../images/blik-xl.png');
+    right: 0;
+    top: -92px;
+  }
+}

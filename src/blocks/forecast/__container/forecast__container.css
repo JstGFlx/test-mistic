@@ -1,0 +1,17 @@
+.forecast__container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 321px) {
+  .forecast__container {
+    margin-top: calc(24px + (64 - 24) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .forecast__container {
+    margin-top: 64px;
+  }
+}

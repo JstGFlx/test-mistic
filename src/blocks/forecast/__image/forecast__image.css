@@ -1,0 +1,58 @@
+.forecast__image {
+  margin: 17px auto 0;
+  width: 225px;
+  height: 225px;
+  position: relative;
+  z-index: 0;
+}
+
+.forecast__image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url('../../../images/icon1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.forecast__image::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: 19.5%;
+  width: 137px;
+  height: 137px;
+  background-image: url('../../../images/woman1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 321px) {
+  .forecast__image {
+    margin: calc(17px + (42 - 17) * ((100vw - 321px) / (1440 - 321))) auto 0;
+    width: calc(225px + (391 - 225) * ((100vw - 321px) / (1440 - 321)));
+    height: calc(225px + (391 - 225) * ((100vw - 321px) / (1440 - 321)));
+  }
+
+  .forecast__image::after {
+    width: calc(137px + (237.83 - 137) * ((100vw - 321px) / (1440 - 321)));
+    height: calc(137px + (237.83 - 137) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .forecast__image {
+    margin: 42px auto 0;
+    width: 391px;
+    height: 391px;
+  }
+
+  .forecast__image::after {
+    width: 237.83px;
+    height: 237.83px;
+  }
+}

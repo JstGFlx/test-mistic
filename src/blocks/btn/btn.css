@@ -1,0 +1,51 @@
+.btn {
+  padding: 0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: linear-gradient(
+    248.67deg,
+    rgba(255, 255, 255, 0) 30.84%,
+    rgba(255, 255, 255, 0.29) 46.06%,
+    rgba(255, 255, 255, 0) 64.04%
+  );
+  transform: rotateZ(360deg) translate(-11em, 0em);
+  animation: light 2s infinite;
+}
+
+@media (min-width: 321px) {
+  .btn {
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(16px + (23 - 16) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .btn {
+    font-size: 20px;
+    line-height: 23px;
+  }
+}
+
+@keyframes light {
+  100% {
+    transform: rotateZ(360deg) translate(10em, 0em);
+  }
+}
