@@ -1,0 +1,20 @@
+.text_type_s {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 320px) {
+  .text_type_s {
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(14px + (19 - 14) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .text_type_s {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
