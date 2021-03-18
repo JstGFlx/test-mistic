@@ -1,0 +1,17 @@
+.advice {
+  margin: 79px 0 40px;
+  padding: 0 29px;
+}
+
+@media (min-width: 321px) {
+  .advice {
+    margin: calc(79px + (141.5 - 79) * ((100vw - 321px) / (1440 - 321))) 0
+      calc(40px + (69 - 40) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .advice {
+    margin: 141.5px 0 69px;
+  }
+}

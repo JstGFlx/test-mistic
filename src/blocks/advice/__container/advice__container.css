@@ -1,0 +1,47 @@
+.advice__container {
+  margin: auto;
+  max-width: 443px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 56px 24px 19px;
+  position: relative;
+}
+
+.advice__container::after {
+  content: '';
+  position: absolute;
+  background-image: url('../../../images/hands.png');
+  background-size: cover;
+  top: 0;
+  left: 50%;
+  height: 78px;
+  width: 78px;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 321px) {
+  .advice__container {
+    max-width: calc(255px + (443 - 255) * ((100vw - 320px) / (1440 - 320)));
+    padding: calc(56px + (127 - 56) * ((100vw - 320px) / (1440 - 320)))
+      calc(24px + (38 - 24) * ((100vw - 320px) / (1440 - 320)))
+      calc(19px + (98 - 19) * ((100vw - 320px) / (1440 - 320)));
+  }
+
+  .advice__container::after {
+    height: calc(78px + (135 - 78) * ((100vw - 320px) / (1440 - 320)));
+    width: calc(78px + (135 - 78) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .advice__container {
+    padding: 127px 38px 98px;
+    max-width: 443px;
+  }
+
+  .advice__container::after {
+    height: 135px;
+    width: 135px;
+  }
+}

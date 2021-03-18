@@ -1,0 +1,18 @@
+.text_type_l {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+@media (min-width: 321px) {
+  .text_type_l {
+    font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(25px + (35 - 25) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .text_type_l {
+    font-size: 25px;
+    line-height: 35px;
+  }
+}

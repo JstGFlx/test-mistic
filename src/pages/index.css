@@ -1,11 +1,14 @@
 @import '../vendor/normalize.css';
 @import '../blocks/body/body.css';
 @import '../blocks/page/page.css';
+@import '../blocks/block/block.css';
 @import '../blocks/text/text.css';
 @import '../blocks/text/_type/text_type_s.css';
 @import '../blocks/text/_type/text_type_m.css';
+@import '../blocks/text/_type/text_type_l.css';
 @import '../blocks/text/_color/text_color_gray.css';
 @import '../blocks/text/_color/text_color_yellow.css';
+@import '../blocks/text/_color/text_color_white.css';
 @import '../blocks/header/header.css';
 @import '../blocks/header/__title/header__title.css';
 @import '../blocks/spinner/spinner.css';
@@ -21,3 +24,6 @@
 @import '../blocks/forecast/__text/forecast__text.css';
 @import '../blocks/forecast/__title/forecast__title.css';
 @import '../blocks/forecast/__note/forecast__note.css';
+@import '../blocks/advice/advice.css';
+@import '../blocks/advice/__container/advice__container.css';
+@import '../blocks/advice/__text/advice__text.css';
