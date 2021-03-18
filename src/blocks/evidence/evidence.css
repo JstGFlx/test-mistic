@@ -1,0 +1,34 @@
+.evidence {
+  height: 331px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.evidence::after {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  background-image: url('../../images/image7.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+}
+
+@media (min-width: 321px) {
+  .evidence {
+    height: calc(331px + (606 - 331) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .evidence {
+    margin: auto;
+    width: 1440px;
+    height: 606px;
+  }
+}

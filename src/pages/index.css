@@ -27,3 +27,6 @@
 @import '../blocks/advice/advice.css';
 @import '../blocks/advice/__container/advice__container.css';
 @import '../blocks/advice/__text/advice__text.css';
+@import '../blocks/medium-span/medium-span.css';
+@import '../blocks/evidence/evidence.css';
+@import '../blocks/evidence/__text/evidence__text.css';

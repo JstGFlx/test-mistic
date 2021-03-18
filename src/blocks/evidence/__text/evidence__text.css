@@ -1,0 +1,19 @@
+.evidence__text {
+  padding-top: 22px;
+  margin: auto;
+  width: 221px;
+}
+
+@media (min-width: 321px) {
+  .evidence__text {
+    padding-top: calc(22px + (50 - 22) * ((100vw - 320px) / (1440 - 320)));
+    width: calc(221px + (386 - 221) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .evidence__text {
+    padding-top: 50px;
+    width: 386px;
+  }
+}
