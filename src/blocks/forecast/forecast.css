@@ -15,7 +15,7 @@
   z-index: -1;
 }
 
-@media (min-width: 396px) {
+@media (min-width: 341px) {
   .forecast::after {
     background-image: url('../../images/blik-l.png');
     top: -73px;
@@ -26,37 +26,9 @@
   }
 }
 
-@media (min-width: 396px) {
+@media (min-width: 397px) {
   .forecast::after {
-    background-image: url('../../images/blik-l.png');
-    top: -73px;
-    right: -230px;
-    width: 964px;
-    background-size: contain;
-  }
-}
-
-@media (min-width: 768px) {
-  .forecast::after {
-    top: -83px;
-    right: -204px;
-    width: 1139px;
-  }
-}
-
-@media (min-width: 906px) {
-  .forecast::after {
-    right: -133px;
-    top: -115px;
-    width: 1400px;
-  }
-}
-
-@media (min-width: 1170px) {
-  .forecast::after {
-    right: -191px;
-    top: -167px;
-    width: 1672px;
+    width: calc(964px + (1672 - 964) * ((100vw - 397px) / (1440 - 397)));
   }
 }
 
@@ -68,7 +40,7 @@
   }
 }
 
-@media (min-width: 1667px) {
+@media (min-width: 1606px) {
   .forecast::after {
     width: 1920px;
     height: 1098px;
