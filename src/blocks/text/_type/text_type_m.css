@@ -4,7 +4,7 @@
 }
 
 .prediction .text_type_m {
-  max-width: 310px;
+  max-width: 267px;
 }
 
 @media (min-width: 321px) {
@@ -14,7 +14,7 @@
   }
 
   .prediction .text_type_m {
-    max-width: calc(310px + (645 - 310) * ((100vw - 320px) / (1440 - 320)));
+    max-width: calc(267px + (645 - 267) * ((100vw - 320px) / (1440 - 320)));
   }
 }
 

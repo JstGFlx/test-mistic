@@ -1,0 +1,11 @@
+.select__item {
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+}
+
+.select__item:hover {
+  background-color: rgba(0, 0, 0, 0.082);
+}

@@ -47,3 +47,9 @@
 @import '../blocks/footer/footer.css';
 @import '../blocks/footer/__text/footer__text.css';
 @import '../blocks/footer/__container/footer__container.css';
+@import '../blocks/select/select.css';
+@import '../blocks/select/__item/select__item.css';
+@import '../blocks/select/__header/select__header.css';
+@import '../blocks/select/__body/select__body.css';
+@import '../blocks/select/__current/select__current.css';
+@import '../blocks/select/__container/select__container.css';

@@ -1,0 +1,38 @@
+.select__container {
+  display: none;
+  max-height: 172px;
+  overflow-y: scroll;
+  background: linear-gradient(
+    90deg,
+    rgba(228, 228, 228, 0.9) -6.2%,
+    rgba(203, 203, 203, 0.9) 100%
+  );
+}
+
+.select__container::-webkit-scrollbar {
+  height: 50%;
+  width: 5px;
+  background: rgba(92, 92, 92, 0.178);
+  border-radius: 7em;
+}
+
+.select__container::-webkit-scrollbar-thumb {
+  border-radius: 7em;
+  background: rgba(92, 92, 92, 0.178);
+}
+
+.select__container:hover::-webkit-scrollbar {
+  background: rgba(92, 92, 92, 0.473);
+}
+
+.select__container:hover::-webkit-scrollbar-thumb {
+  background: rgba(92, 92, 92, 0.726);
+}
+
+.select__container::-webkit-scrollbar-button:vertical:start:decrement {
+  display: none;
+}
+
+.select__container::-webkit-scrollbar-button:vertical:end:increment {
+  display: none;
+}

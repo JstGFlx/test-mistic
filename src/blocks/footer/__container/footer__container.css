@@ -2,41 +2,27 @@
   margin: auto;
   height: 17px;
   max-width: 300px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
-/* полоса прокрутки (скроллбар) */
 .footer__container::-webkit-scrollbar {
-  visibility: hidden;
-  width: 5px; /* ширина для вертикального скролла */
-  background: rgba(92, 92, 92, 0.336); /* Цвет скроллбара */
+  width: 5px;
+  background: rgba(92, 92, 92, 0.048);
   border-radius: 7em;
 }
-.footer__container::-webkit-scrollbar:horizontal {
-  display: none;
-}
 
-/* ползунок скроллбара */
 .footer__container::-webkit-scrollbar-thumb {
-  visibility: hidden;
-  border-radius: 7em; /* Закругление углов ползунка скроллбара */
-  background: rgba(92, 92, 92, 0.603); /* Цвет скроллбара */
+  border-radius: 7em;
+  background: rgba(92, 92, 92, 0.116);
 }
 
-/* Анимация при наведении на ползунок скроллбара */
-.footer__container::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(92, 92, 92, 0.555); /* Цвет ползунка */
+.footer__container:hover::-webkit-scrollbar {
+  background: rgba(92, 92, 92, 0.336);
 }
 
-.footer__container:hover::-webkit-scrollbar:vertical {
-  visibility: visible;
+.footer__container:hover::-webkit-scrollbar-thumb {
+  background: rgba(92, 92, 92, 0.603);
 }
-
-.footer__container:hover::-webkit-scrollbar-thumb:vertical {
-  visibility: visible;
-}
-
-/* Стрелки */
 
 .footer__container::-webkit-scrollbar-button:vertical:start:decrement {
   display: none;
