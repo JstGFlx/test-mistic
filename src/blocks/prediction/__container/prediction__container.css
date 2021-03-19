@@ -6,7 +6,7 @@
 }
 
 @media (min-width: 321px) {
-  .prediction__container_point_2 {
+  .prediction__container {
     min-height: calc(539px + (1010 - 539) * ((100vw - 321px) / (1440 - 321)));
   }
 }
