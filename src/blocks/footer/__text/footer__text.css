@@ -1,6 +1,8 @@
 .footer__text {
+  margin: auto;
   font-size: 7px;
   line-height: 9px;
   letter-spacing: 3px;
   color: #9d9d9d;
+  min-height: 50px;
 }
