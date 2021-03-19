@@ -1,0 +1,18 @@
+.prediction__rune {
+  width: 32.56px;
+  height: 10px;
+}
+
+@media (min-width: 321px) {
+  .prediction__rune {
+    width: calc(32.56px + (56.52 - 32.56) * ((100vw - 321px) / (1440 - 321)));
+    height: calc(10px + (17.36 - 10) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .prediction__rune {
+    width: 56.52px;
+    height: 17.36px;
+  }
+}

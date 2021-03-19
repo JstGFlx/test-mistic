@@ -31,3 +31,11 @@
 @import '../blocks/medium-span/medium-span.css';
 @import '../blocks/evidence/evidence.css';
 @import '../blocks/evidence/__text/evidence__text.css';
+@import '../blocks/prediction/prediction.css';
+@import '../blocks/prediction/__title/prediction__title.css';
+@import '../blocks/prediction/__text/prediction__text.css';
+@import '../blocks/prediction/__rune/prediction__rune.css';
+@import '../blocks/prediction/__note/prediction__note.css';
+@import '../blocks/prediction/__container/prediction__container.css';
+@import '../blocks/footer/footer.css';
+@import '../blocks/footer/__text/footer__text.css';

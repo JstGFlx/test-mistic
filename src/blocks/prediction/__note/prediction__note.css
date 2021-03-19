@@ -1,0 +1,15 @@
+.prediction__note {
+  margin-bottom: 63px;
+}
+
+@media (min-width: 321px) {
+  .prediction__note {
+    margin-bottom: calc(63px + (114 - 63) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .prediction__note {
+    margin-bottom: 114px;
+  }
+}

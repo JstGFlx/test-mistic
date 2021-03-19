@@ -1,0 +1,18 @@
+.prediction__container {
+  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 321px) {
+  .prediction__container {
+    padding-top: calc(27px + (50 - 27) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .prediction__container {
+    padding-top: 50px;
+  }
+}

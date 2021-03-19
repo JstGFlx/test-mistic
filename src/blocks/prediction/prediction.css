@@ -1,0 +1,44 @@
+.prediction {
+  padding: 53px 0 69px;
+  position: relative;
+}
+
+.prediction::after {
+  content: '';
+  position: absolute;
+  background-image: url('../../images/eye.svg');
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 52px;
+  left: 0;
+  bottom: 44px;
+  transform: translateX(-31%);
+  opacity: 0.2;
+}
+
+.prediction::before {
+  content: '';
+  position: absolute;
+  background-image: url('../../images/eye-1.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(-9.61deg);
+  width: 83.64px;
+  height: 44.13px;
+  right: -23px;
+  top: 51%;
+  opacity: 0.2;
+}
+
+@media (min-width: 321px) {
+  .prediction {
+    padding: calc(53px + (133 - 53) * ((100vw - 321px) / (1440 - 321))) 0 69px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .prediction {
+    padding: 133px 0 69px;
+  }
+}
