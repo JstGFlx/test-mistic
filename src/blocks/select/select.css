@@ -1,4 +1,23 @@
 .select {
   width: 182px;
+  position: relative;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media (min-width: 321px) {
+  .select {
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1440 - 321)));
+    line-height: calc(16px + (23 - 16) * ((100vw - 320px) / (1440 - 321)));
+    width: calc(182px + (312 - 182) * ((100vw - 320px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .select {
+    font-size: 20px;
+    line-height: 23px;
+    width: 312px;
+  }
 }

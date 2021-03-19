@@ -31,3 +31,15 @@
 .select__header:hover {
   color: #ffffff;
 }
+
+@media (min-width: 321px) {
+  .select__header {
+    height: calc(40px + (70 - 40) * ((100vw - 320px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .select__header {
+    height: 70px;
+  }
+}

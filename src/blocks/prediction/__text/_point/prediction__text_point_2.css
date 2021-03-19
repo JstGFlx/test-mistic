@@ -1,6 +1,6 @@
 .prediction__text_point_2 {
   font-size: 14px;
-  max-width: 248px;
+  max-width: 237px;
   line-height: 20px;
   text-align: center;
   opacity: 0.6;
@@ -9,7 +9,7 @@
 
 @media (min-width: 321px) {
   .prediction__text_point_2 {
-    max-width: calc(248px + (445 - 248) * ((100vw - 321px) / (1440 - 321)));
+    max-width: calc(237px + (445 - 237) * ((100vw - 321px) / (1440 - 321)));
     font-size: calc(14px + (25 - 14) * ((100vw - 321px) / (1440 - 321)));
     line-height: calc(20px + (35 - 20) * ((100vw - 321px) / (1440 - 321)));
   }
