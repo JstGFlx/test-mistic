@@ -3,10 +3,18 @@
   line-height: 25px;
 }
 
+.prediction .text_type_m {
+  max-width: 310px;
+}
+
 @media (min-width: 321px) {
   .text_type_m {
     font-size: calc(16px + (25 - 16) * ((100vw - 320px) / (1440 - 320)));
     line-height: calc(25px + (35 - 25) * ((100vw - 320px) / (1440 - 320)));
+  }
+
+  .prediction .text_type_m {
+    max-width: calc(310px + (645 - 310) * ((100vw - 320px) / (1440 - 320)));
   }
 }
 
@@ -14,5 +22,8 @@
   .text_type_m {
     font-size: 25px;
     line-height: 35px;
+  }
+  .prediction .text_type_m {
+    max-width: 645px;
   }
 }

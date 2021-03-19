@@ -1,0 +1,43 @@
+.prediction_point_1 {
+}
+
+.prediction_point_1::after {
+  left: 0;
+  bottom: 44px;
+  transform: translateX(-31%);
+}
+
+.prediction_point_1::before {
+  right: -23px;
+  top: 51%;
+  transform: rotate(-9.61deg);
+}
+
+@media (min-width: 321px) {
+  .prediction_point_1::before {
+    width: calc(83.64px + (297 - 83.64) * ((100vw - 321px) / (1440 - 321)));
+    height: calc(44.13px + (156.6 - 44.13) * ((100vw - 321px) / (1440 - 321)));
+    right: calc((-23px) + ((-118) - (-23)) * ((100vw - 321px) / (1440 - 321)));
+  }
+
+  .prediction_point_1::after {
+    width: calc(52px + (164 - 52) * ((100vw - 321px) / (1440 - 321)));
+    height: calc(52px + (164 - 52) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .prediction_point_1::after {
+    width: 164px;
+    height: 164px;
+    bottom: 48px;
+    transform: translateX(-26%);
+  }
+
+  .prediction_point_1::before {
+    width: 297px;
+    height: 156.6px;
+    right: -118px;
+    top: 47%;
+  }
+}

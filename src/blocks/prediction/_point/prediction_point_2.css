@@ -1,0 +1,44 @@
+.prediction_point_2 {
+}
+
+.prediction_point_2::after {
+  left: -10px;
+  bottom: 6px;
+}
+
+.prediction_point_2::before {
+  right: -26px;
+  top: 14%;
+  transform: rotate(3deg);
+}
+
+@media (min-width: 321px) {
+  .prediction_point_2::after {
+    width: calc(52px + (91 - 52) * ((100vw - 321px) / (1440 - 321)));
+    height: calc(52px + (91 - 52) * ((100vw - 321px) / (1440 - 321)));
+    left: calc((-10px) + (408 - (-10)) * ((100vw - 321px) / (1440 - 321)));
+    bottom: calc(6px + (70 - 6) * ((100vw - 321px) / (1440 - 321)));
+  }
+
+  .prediction_point_2::before {
+    width: calc(83.64px + (146 - 83.64) * ((100vw - 321px) / (1440 - 321)));
+    height: calc(44.13px + (77 - 44.13) * ((100vw - 321px) / (1440 - 321)));
+    right: calc((-26px) + (411 - (-26)) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .prediction_point_2::after {
+    width: 91px;
+    height: 91px;
+    bottom: 70px;
+    left: 408px;
+  }
+
+  .prediction_point_2::before {
+    width: 146px;
+    height: 77px;
+    right: 411px;
+    top: 13.6%;
+  }
+}

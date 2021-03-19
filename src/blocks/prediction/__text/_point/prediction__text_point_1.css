@@ -1,0 +1,19 @@
+.prediction__text_point_1 {
+  max-width: 230px;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media (min-width: 321px) {
+  .prediction__text_point_1 {
+    max-width: calc(230px + (300 - 230) * ((100vw - 321px) / (1440 - 321)));
+    font-size: calc(20px + (25 - 20) * ((100vw - 321px) / (1440 - 321)));
+    line-height: calc(28px + (35 - 28) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .prediction__text_point_1 {
+    max-width: 300px;
+  }
+}
