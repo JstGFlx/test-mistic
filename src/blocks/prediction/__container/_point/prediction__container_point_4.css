@@ -1,0 +1,21 @@
+.prediction__container_point_4 {
+  grid-template-rows: 124px 136px 76px 60px 123px 1fr;
+}
+
+@media (min-width: 321px) {
+  .prediction__container_point_4 {
+    grid-template-rows:
+      calc(124px + (224 - 124) * ((100vw - 321px) / (1440 - 321)))
+      calc(136px + (181 - 136) * ((100vw - 321px) / (1440 - 321)))
+      calc(76px + (118 - 76) * ((100vw - 321px) / (1440 - 321)))
+      calc(60px + (105 - 60) * ((100vw - 321px) / (1440 - 321)))
+      calc(123px + (364 - 123) * ((100vw - 321px) / (1440 - 321)))
+      1fr;
+  }
+}
+
+@media (min-width: 1440px) {
+  .prediction__container_point_4 {
+    grid-template-rows: 224px 181px 118px 105px 364px 1fr;
+  }
+}
