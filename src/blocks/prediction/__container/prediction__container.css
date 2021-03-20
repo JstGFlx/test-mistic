@@ -1,5 +1,5 @@
 .prediction__container {
-  min-height: 539px;
+  min-height: 551px;
   display: grid;
   align-items: end;
   justify-items: center;
@@ -7,7 +7,7 @@
 
 @media (min-width: 321px) {
   .prediction__container {
-    min-height: calc(539px + (1010 - 539) * ((100vw - 321px) / (1440 - 321)));
+    min-height: calc(551px + (1010 - 551) * ((100vw - 321px) / (1440 - 321)));
   }
 }
 
