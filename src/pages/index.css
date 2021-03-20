@@ -60,6 +60,7 @@
 @import '../blocks/select/__current/select__current.css';
 @import '../blocks/select/__container/select__container.css';
 @import '../blocks/loading/loading.css';
+@import '../blocks/loading/__spinner/loading__spinner.css';
 @import '../blocks/final/final.css';
 @import '../blocks/final/__text/final__text.css';
 @import '../blocks/final/__massage/final__massage.css';
