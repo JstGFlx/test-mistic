@@ -1,0 +1,22 @@
+.prediction__container_point_3 {
+  grid-template-rows: 124px 86px 80px 60px 60px 110px 1fr;
+}
+
+@media (min-width: 321px) {
+  .prediction__container_point_3 {
+    grid-template-rows:
+      calc(124px + (224 - 124) * ((100vw - 321px) / (1440 - 321)))
+      calc(86px + (144 - 86) * ((100vw - 321px) / (1440 - 321)))
+      calc(80px + (110 - 80) * ((100vw - 321px) / (1440 - 321)))
+      calc(60px + (105 - 60) * ((100vw - 321px) / (1440 - 321)))
+      calc(60px + (105 - 60) * ((100vw - 321px) / (1440 - 321)))
+      calc(110px + (304 - 110) * ((100vw - 321px) / (1440 - 321)))
+      1fr;
+  }
+}
+
+@media (min-width: 1440px) {
+  .prediction__container_point_3 {
+    grid-template-rows: 224px 144px 110px 105px 105px 304px 1fr;
+  }
+}

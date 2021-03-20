@@ -43,6 +43,7 @@
 @import '../blocks/prediction/__container/prediction__container.css';
 @import '../blocks/prediction/__container/_point/prediction__container_point_1.css';
 @import '../blocks/prediction/__container/_point/prediction__container_point_2.css';
+@import '../blocks/prediction/__container/_point/prediction__container_point_3.css';
 @import '../blocks/border-bot/border-bot.css';
 @import '../blocks/footer/footer.css';
 @import '../blocks/footer/__text/footer__text.css';
