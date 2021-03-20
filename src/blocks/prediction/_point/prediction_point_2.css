@@ -1,6 +1,6 @@
 .prediction_point_2::after {
   left: -10px;
-  bottom: 6px;
+  bottom: 34px;
 }
 
 .prediction_point_2::before {
@@ -14,7 +14,7 @@
     width: calc(52px + (91 - 52) * ((100vw - 321px) / (1440 - 321)));
     height: calc(52px + (91 - 52) * ((100vw - 321px) / (1440 - 321)));
     left: calc((-10px) + (408 - (-10)) * ((100vw - 321px) / (1440 - 321)));
-    bottom: calc(6px + (70 - 6) * ((100vw - 321px) / (1440 - 321)));
+    bottom: calc(34px + (70 - 34) * ((100vw - 321px) / (1440 - 321)));
   }
 
   .prediction_point_2::before {
