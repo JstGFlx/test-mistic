@@ -12,13 +12,13 @@
   </head>
   <body class="body">
     <div class="page">
-      <header class="header">
+      <!--       <header class="header">
         <h1 class="header__title text text_type_s text_color_gray">
           Лучшие астрологи и экстрасенсы Румынии
         </h1>
-      </header>
+      </header> -->
       <main>
-        <section class="forecast">
+        <!--         <section class="forecast">
           <h2 class="forecast__title text text_color_gray">
             Точность прогноза: 97%
           </h2>
@@ -67,7 +67,7 @@
             </h2>
             <button class="btn btn_size_m btn_color_yellow">Да</button>
             <button class="btn btn_size_m btn_color_yellow">Нет</button>
-            <p class="text text_type_s text_color_gray">Вопрос 1-5</p>
+            <p class="text text_type_s text_color_white text_opacity_06">Вопрос 1-5</p>
             <img class="prediction__rune" src="./images/rune1.svg" alt="Руна" />
             <p
               class="prediction__text prediction__text_point_1 text_color_white"
@@ -77,7 +77,7 @@
             </p>
             <img class="prediction__rune" src="./images/rune2.svg" alt="Руна" />
           </div>
-        </section>
+        </section> -->
         <!-- <section class="prediction prediction_point_2">
           <div
             class="prediction__container prediction__container_point_2 width_s"
@@ -98,7 +98,7 @@
             <button class="btn btn_size_m btn_color_yellow">День</button>
             <button class="btn btn_size_m btn_color_yellow">Вечер</button>
             <button class="btn btn_size_m btn_color_yellow">Ночь</button>
-            <p class="prediction__note text text_type_s text_color_gray">
+            <p class="prediction__note text text_type_s text_color_white text_opacity_06">
               Вопрос 2-5
             </p>
           </div>
@@ -156,7 +156,7 @@
               </div>
             </div>
             <button class="btn btn_size_m btn_color_yellow">Далее</button>
-            <p class="prediction__note text text_type_s text_color_gray">
+            <p class="prediction__note text text_type_s text_color_white text_opacity_06">
               Вопрос 3-5
             </p>
           </div>
@@ -179,7 +179,7 @@
             <button class="btn btn_size_m btn_color_yellow">Да</button>
             <button class="btn btn_size_m btn_color_yellow">Нет</button>
             <button class="btn btn_size_m btn_color_yellow">Иногда</button>
-            <p class="prediction__note text text_type_s text_color_gray">
+            <p class="prediction__note text text_type_s text_color_white text_opacity_06">
               Вопрос 4-5
             </p>
           </div>
@@ -204,7 +204,7 @@
             <button class="btn btn_size_m btn_color_yellow">
               Затрудняюсь ответить
             </button>
-            <p class="prediction__note text text_type_s text_color_gray">
+            <p class="prediction__note text text_type_s text_color_white text_opacity_06">
               Вопрос 5-5
             </p>
           </div>
@@ -238,16 +238,34 @@
           </p>
           <button class="btn btn_size_l btn_color_green">
             Позвонить и прослушать
-          </button>-->
-        </section>
-                <section class="loading">
+          </button>
+        </section>-->
+        <!--   <section class="loading loader">
           <img
             class="loading__spinner"
             src="./images/spinner.svg"
             alt="загрузка"
           />
-          <p class="text text_type_s text_color_gray">Loading</p>
-        </section> 
+          <p class="text text_type_s text_color_white text_opacity_06">Loading</p>
+        </section> -->
+        <section class="record loader">
+          <div class="record__container">
+            <img
+              class="record__image"
+              src="./images/microphone.svg"
+              alt="микрофон"
+            />
+            <progress class="record__progress" value="50" max="100"></progress>
+            <p class="record__value text text_color_white text_opacity_06">
+              50%
+            </p>
+            <p
+              class="record__text text text_type_s text_color_white text_opacity_06"
+            >
+              Запись сообщения
+            </p>
+          </div>
+        </section>
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text text to-upper-case">

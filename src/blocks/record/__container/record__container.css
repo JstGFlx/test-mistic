@@ -1,0 +1,7 @@
+.record__container {
+  display: grid;
+  margin-top: 14px;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 123px 25px 38px 24px;
+}

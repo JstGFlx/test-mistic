@@ -59,6 +59,7 @@
 @import '../blocks/select/__body/select__body.css';
 @import '../blocks/select/__current/select__current.css';
 @import '../blocks/select/__container/select__container.css';
+@import '../blocks/loader/loader.css';
 @import '../blocks/loading/loading.css';
 @import '../blocks/loading/__spinner/loading__spinner.css';
 @import '../blocks/final/final.css';
@@ -68,3 +69,9 @@
 @import '../blocks/final/__container/final__container.css';
 @import '../blocks/final/__alert/final__alert.css';
 @import '../blocks/final/__alert/_span/final__alert_span.css';
+@import '../blocks/record/record.css';
+@import '../blocks/record/__container/record__container.css';
+@import '../blocks/record/__value/record__value.css';
+@import '../blocks/record/__text/record__text.css';
+@import '../blocks/record/__progress/record__progress.css';
+@import '../blocks/record/__image/record__image.css';
