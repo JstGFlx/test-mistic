@@ -1,0 +1,21 @@
+.final__massage {
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 228px;
+}
+
+@media (min-width: 321px) {
+  .final__massage {
+    font-size: calc(14px + (25 - 14) * ((100vw - 321px) / (1440 - 321)));
+    line-height: calc(18px + (35 - 18) * ((100vw - 321px) / (1440 - 321)));
+    max-width: calc(228px + (451 - 228) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .final__massage {
+    font-size: 25px;
+    line-height: 35px;
+    max-width: 451px;
+  }
+}

@@ -26,21 +26,10 @@
   opacity: 0.2;
 }
 
-@media (min-width: 321px) {
-  .prediction::after {
-  }
-
-  .prediction::before {
-  }
-}
-
 @media (min-width: 1440px) {
   .prediction {
     margin: auto;
     max-width: 1440px;
-  }
-
-  .prediction::after {
   }
 
   .prediction::before {

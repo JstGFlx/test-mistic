@@ -1,0 +1,21 @@
+.final__alert {
+  font-size: 16px;
+  line-height: 25px;
+  max-width: 230px;
+}
+
+@media (min-width: 321px) {
+  .final__alert {
+    font-size: calc(16px + (25 - 16) * ((100vw - 321px) / (1440 - 321)));
+    line-height: calc(25px + (35 - 25) * ((100vw - 321px) / (1440 - 321)));
+    max-width: calc(230px + (379 - 230) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .final__alert {
+    font-size: 25px;
+    line-height: 35px;
+    max-width: 379px;
+  }
+}

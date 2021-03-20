@@ -26,11 +26,23 @@
   .massage {
     padding: calc(0px + (8 - 0) * ((100vw - 321px) / (1440 - 321)));
   }
+  .massage::after {
+    border-width: calc(17px + (32 - 17) * ((100vw - 321px) / (1440 - 321)))
+      calc(8.5px + (16 - 8.5) * ((100vw - 321px) / (1440 - 321))) 0
+      calc(8.5px + (16 - 8.5) * ((100vw - 321px) / (1440 - 321)));
+    bottom: calc((-8px) + ((-19) - (-8)) * ((100vw - 321px) / (1440 - 321)));
+    right: calc(17.1px + (26.1 - 17.1) * ((100vw - 321px) / (1440 - 321)));
+  }
 }
 
 @media (min-width: 1440px) {
   .massage {
     padding: 8px;
-    max-width: 354px;
+  }
+
+  .massage::after {
+    border-width: 32px 16px 0 16px;
+    bottom: -19px;
+    right: 26.1px;
   }
 }

@@ -1,0 +1,22 @@
+.final__text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 212px;
+}
+
+@media (min-width: 321px) {
+  .final__text {
+    font-size: calc(14px + (25 - 14) * ((100vw - 321px) / (1440 - 321)));
+    line-height: calc(16px + (35 - 16) * ((100vw - 321px) / (1440 - 321)));
+    max-width: calc(212px + (462 - 212) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .final__text {
+    font-size: 25px;
+    line-height: 35px;
+    max-width: 462px;
+  }
+}

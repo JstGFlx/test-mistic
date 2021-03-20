@@ -1,0 +1,23 @@
+.final {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 121px 79px auto 83px 70px 7px;
+}
+
+@media (min-width: 321px) {
+  .final {
+    grid-template-rows:
+      calc(121px + (257 - 121) * ((100vw - 321px) / (1440 - 321)))
+      calc(79px + (99 - 79) * ((100vw - 321px) / (1440 - 321))) auto
+      calc(83px + (89 - 83) * ((100vw - 321px) / (1440 - 321)))
+      calc(70px + (168 - 70) * ((100vw - 321px) / (1440 - 321)))
+      calc(7px + (15 - 7) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .final {
+    grid-template-rows: 257px 99px auto 89px 168px 15px;
+  }
+}

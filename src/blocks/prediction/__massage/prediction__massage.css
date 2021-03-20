@@ -1,0 +1,6 @@
+@media (min-width: 1440px) {
+  .prediction__massage {
+    padding: 8px;
+    max-width: 354px;
+  }
+}

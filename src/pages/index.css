@@ -18,8 +18,10 @@
 @import '../blocks/forecast/forecast.css';
 @import '../blocks/btn/btn.css';
 @import '../blocks/btn/_color/btn_color_yellow.css';
+@import '../blocks/btn/_color/btn_color_green.css';
 @import '../blocks/btn/_margin/btn_margin_s.css';
 @import '../blocks/btn/_size/btn_size_m.css';
+@import '../blocks/btn/_size/btn_size_l.css';
 @import '../blocks/forecast/__container/forecast__container.css';
 @import '../blocks/to-upper-case/to-upper-case.css';
 @import '../blocks/forecast/__image/forecast__image.css';
@@ -58,3 +60,10 @@
 @import '../blocks/select/__current/select__current.css';
 @import '../blocks/select/__container/select__container.css';
 @import '../blocks/loading/loading.css';
+@import '../blocks/final/final.css';
+@import '../blocks/final/__text/final__text.css';
+@import '../blocks/final/__massage/final__massage.css';
+@import '../blocks/final/__massage/_span/final__massage_span.css';
+@import '../blocks/final/__container/final__container.css';
+@import '../blocks/final/__alert/final__alert.css';
+@import '../blocks/final/__alert/_span/final__alert_span.css';

@@ -1,0 +1,23 @@
+.final__container {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 13px 15px;
+  box-sizing: content-box;
+  margin: 4px 0;
+}
+
+@media (min-width: 321px) {
+  .final__container {
+    margin: calc(4px + (40 - 4) * ((100vw - 321px) / (1440 - 321))) 0;
+    padding: calc(13px + (54 - 15) * ((100vw - 321px) / (1440 - 321)))
+      calc(15px + (49 - 15) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .final__container {
+    margin: 40px 0;
+    padding: 54px 49px;
+  }
+}

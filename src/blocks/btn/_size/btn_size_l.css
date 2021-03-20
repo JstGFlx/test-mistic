@@ -1,0 +1,20 @@
+.btn_size_l {
+  width: 238.01px;
+  height: 48px;
+}
+
+@media (min-width: 321px) {
+  .btn_size_l {
+    width: calc(
+      238.01px + (401.69 - 238.01) * ((100vw - 321px) / (1440 - 321))
+    );
+    height: calc(48px + (79.67 - 48) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .btn_size_l {
+    width: 401.69px;
+    height: 79.67px;
+  }
+}
