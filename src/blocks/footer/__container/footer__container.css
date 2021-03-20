@@ -31,3 +31,17 @@
 .footer__container::-webkit-scrollbar-button:vertical:end:increment {
   display: none;
 }
+
+@media (min-width: 321px) {
+  .footer__container {
+    height: calc(17px + (32 - 17) * ((100vw - 321px) / (1440 - 321)));
+    max-width: calc(300px + (498 - 300) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer__container {
+    height: 32px;
+    max-width: 498px;
+  }
+}

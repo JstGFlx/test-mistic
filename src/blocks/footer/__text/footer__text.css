@@ -6,3 +6,17 @@
   color: #9d9d9d;
   min-height: 50px;
 }
+
+@media (min-width: 321px) {
+  .footer__text {
+    font-size: calc(7px + (12 - 7) * ((100vw - 321px) / (1440 - 321)));
+    line-height: calc(9px + (18 - 9) * ((100vw - 321px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
