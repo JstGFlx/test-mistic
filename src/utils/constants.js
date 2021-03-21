@@ -159,6 +159,8 @@ const templatePredict3 = document.querySelector('#predict-3');
 const templatePredict4 = document.querySelector('#predict-4');
 const templatePredict5 = document.querySelector('#predict-5');
 const templateLoading = document.querySelector('#loading');
+const templateRecord = document.querySelector('#record');
+const templateFinal = document.querySelector('#final');
 
 export {
   DAYS,
@@ -171,4 +173,6 @@ export {
   templatePredict4,
   templatePredict5,
   templateLoading,
+  templateRecord,
+  templateFinal,
 };
