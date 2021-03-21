@@ -7,6 +7,7 @@ import {
 } from '../utils/constants.js';
 import Section from '../components/Section.js';
 import SelectValidator from '../components/SelectValidator.js';
+import SelectItem from '../components/SelectItem.js';
 
 export const renderPredict3 = () => {
   const predictElement = templatePredict3.content
@@ -29,12 +30,18 @@ export const renderPredict3 = () => {
   const daysList = new Section(
     {
       renderer: (itemText) => {
-        const selectItem = createSelectItem(
+        const selectItem = new SelectItem(
           templateItem,
           itemText,
-          selectDayHeader
+          selectDayHeader,
+          {
+            handleItemClick: () => {
+              closeAllSelects();
+              validatorDay.checkSelectValidity();
+            },
+          }
         );
-        daysList.appendItem(selectItem);
+        daysList.appendItem(selectItem.generateItem());
       },
     },
     '#body_days'
@@ -43,12 +50,18 @@ export const renderPredict3 = () => {
   const monthList = new Section(
     {
       renderer: (itemText) => {
-        const selectItem = createSelectItem(
+        const selectItem = new SelectItem(
           templateItem,
           itemText,
-          selectMonthHeader
+          selectMonthHeader,
+          {
+            handleItemClick: () => {
+              closeAllSelects();
+              validatorMonth.checkSelectValidity();
+            },
+          }
         );
-        monthList.appendItem(selectItem);
+        monthList.appendItem(selectItem.generateItem());
       },
     },
     '#body_month'
@@ -57,12 +70,18 @@ export const renderPredict3 = () => {
   const yearList = new Section(
     {
       renderer: (itemText) => {
-        const selectItem = createSelectItem(
+        const selectItem = new SelectItem(
           templateItem,
           itemText,
-          selectYearHeader
+          selectYearHeader,
+          {
+            handleItemClick: () => {
+              closeAllSelects();
+              validatorYear.checkSelectValidity();
+            },
+          }
         );
-        yearList.appendItem(selectItem);
+        yearList.appendItem(selectItem.generateItem());
       },
     },
     '#body_year'
@@ -77,7 +96,7 @@ export const renderPredict3 = () => {
     selectYearBody.classList.remove('select_opened');
   };
 
-  const toggleSelect = (selectBody, selectHeader) => {
+  const handleSelectClick = (selectBody, selectHeader) => {
     if (selectBody.classList.contains('select_opened')) {
       selectBody.classList.remove('select_opened');
       selectHeader.classList.remove('select__header_opened');
@@ -86,25 +105,6 @@ export const renderPredict3 = () => {
       selectBody.classList.add('select_opened');
       selectHeader.classList.add('select__header_opened');
     }
-  };
-
-  const createSelectItem = (template, itemText, header) => {
-    const selectItem = template.content
-      .querySelector('.select__item')
-      .cloneNode(true);
-    header === selectMonthHeader
-      ? (selectItem.textContent = itemText[0])
-      : (selectItem.textContent = itemText);
-    selectItem.addEventListener('click', () => {
-      validatorDay.checkSelectValidity();
-      validatorMonth.checkSelectValidity();
-      validatorYear.checkSelectValidity();
-      header === selectMonthHeader
-        ? (header.textContent = itemText[1])
-        : (header.textContent = itemText);
-      closeAllSelects();
-    });
-    return selectItem;
   };
 
   const validatorDay = new SelectValidator(selectDayHeader);
@@ -118,15 +118,15 @@ export const renderPredict3 = () => {
   daysList.renderItems(DAYS);
 
   selectDayHeader.addEventListener('click', () => {
-    toggleSelect(selectDayBody, selectDayHeader);
+    handleSelectClick(selectDayBody, selectDayHeader);
   });
 
   selectMonthHeader.addEventListener('click', () => {
-    toggleSelect(selectMonthBody, selectMonthHeader);
+    handleSelectClick(selectMonthBody, selectMonthHeader);
   });
 
   selectYearHeader.addEventListener('click', () => {
-    toggleSelect(selectYearBody, selectYearHeader);
+    handleSelectClick(selectYearBody, selectYearHeader);
   });
 
   btnsPredict3.addEventListener('click', () => {
