@@ -12,16 +12,14 @@ export default class SelectValidator {
   }
 
   _checkInvalidSelect() {
-    return this._selectList.some((select) => {
-      return isNaN(Number(select.textContent));
-    });
+    return isNaN(Number(this._select.textContent));
   }
 
-  checkInputValidity() {
-    if (checkInvalidSelect(this._select)) {
-      showError(this._select);
+  checkSelectValidity() {
+    if (this._checkInvalidSelect(this._select)) {
+      this._showError(this._select);
     } else {
-      hideError(this._select);
+      this._hideError(this._select);
     }
   }
 }

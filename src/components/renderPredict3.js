@@ -6,6 +6,7 @@ import {
   predictions,
 } from '../utils/constants.js';
 import Section from '../components/Section.js';
+import SelectValidator from '../components/SelectValidator.js';
 
 export const renderPredict3 = () => {
   const predictElement = templatePredict3.content
@@ -23,6 +24,7 @@ export const renderPredict3 = () => {
   const selectYearHeader = selectYear.querySelector('.select__header');
   const selectYearBody = selectYear.querySelector('.select__container');
   const templateItem = document.querySelector('.template_item');
+  const btnsPredict3 = predictions.querySelector('.btn');
 
   const daysList = new Section(
     {
@@ -94,6 +96,9 @@ export const renderPredict3 = () => {
       ? (selectItem.textContent = itemText[0])
       : (selectItem.textContent = itemText);
     selectItem.addEventListener('click', () => {
+      validatorDay.checkSelectValidity();
+      validatorMonth.checkSelectValidity();
+      validatorYear.checkSelectValidity();
       header === selectMonthHeader
         ? (header.textContent = itemText[1])
         : (header.textContent = itemText);
@@ -101,6 +106,12 @@ export const renderPredict3 = () => {
     });
     return selectItem;
   };
+
+  const validatorDay = new SelectValidator(selectDayHeader);
+  const validatorMonth = new SelectValidator(selectMonthHeader);
+  const validatorYear = new SelectValidator(selectYearHeader);
+
+  const collectSelectData = () => {};
 
   yearList.renderItems(YEARS);
   monthList.renderItems(MONTH);
@@ -116,5 +127,11 @@ export const renderPredict3 = () => {
 
   selectYearHeader.addEventListener('click', () => {
     toggleSelect(selectYearBody, selectYearHeader);
+  });
+
+  btnsPredict3.addEventListener('click', () => {
+    validatorDay.checkSelectValidity();
+    validatorMonth.checkSelectValidity();
+    validatorYear.checkSelectValidity();
   });
 };
