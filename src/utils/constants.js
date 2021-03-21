@@ -156,6 +156,8 @@ const predictions = document.querySelector('.predictions');
 const btnsPredict1 = predictions.querySelectorAll('.btn');
 const templatePredict2 = document.querySelector('#predict-2');
 const templatePredict3 = document.querySelector('#predict-3');
+const templatePredict4 = document.querySelector('#predict-4');
+const templateLoading = document.querySelector('#loading');
 
 export {
   DAYS,
@@ -165,4 +167,6 @@ export {
   btnsPredict1,
   templatePredict2,
   templatePredict3,
+  templatePredict4,
+  templateLoading,
 };
