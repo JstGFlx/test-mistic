@@ -62,204 +62,238 @@
             </span>
           </p>
         </section>
-        <!--       <section id="section-predic" class="prediction prediction_point_1">
-          <div class="prediction__container prediction__container_point_1">
-            <h2 class="prediction__title text text_color_yellow to-upper-case">
-              Боитесь ли вы умереть?
-            </h2>
-            <button class="btn btn_size_m btn_color_yellow">Да</button>
-            <button class="btn btn_size_m btn_color_yellow">Нет</button>
-            <p class="text text_type_s text_color_white text_opacity_06">
-              Вопрос 1-5
-            </p>
-            <img class="prediction__rune" src="./images/rune1.svg" alt="Руна" />
-            <p
-              class="prediction__text prediction__text_point_1 text_color_white"
+        <section class="predictions">
+          <div id="section-predic" class="prediction prediction_point_1">
+            <div class="prediction__container prediction__container_point_1">
+              <h2
+                class="prediction__title text text_color_yellow to-upper-case"
+              >
+                Боитесь ли вы умереть?
+              </h2>
+              <button class="btn btn_size_m btn_color_yellow">Да</button>
+              <button class="btn btn_size_m btn_color_yellow">Нет</button>
+              <p class="text text_type_s text_color_white text_opacity_06">
+                Вопрос 1-5
+              </p>
+              <img
+                class="prediction__rune"
+                src="./images/rune1.svg"
+                alt="Руна"
+              />
+              <p
+                class="prediction__text prediction__text_point_1 text_color_white"
+              >
+                <span class="block"> Вы, конечно, умрете.</span> И все, с кем вы
+                знакомы, тоже однажды умрут.
+              </p>
+              <img
+                class="prediction__rune"
+                src="./images/rune2.svg"
+                alt="Руна"
+              />
+            </div>
+          </div>
+        </section>
+        <template id="predict-2">
+          <div class="prediction prediction_point_2">
+            <div
+              class="prediction__container prediction__container_point_2 width_s"
             >
-              <span class="block"> Вы, конечно, умрете.</span> И все, с кем вы
-              знакомы, тоже однажды умрут.
-            </p>
-            <img class="prediction__rune" src="./images/rune2.svg" alt="Руна" />
-          </div>
-        </section> 
-         <section class="prediction prediction_point_2">
-          <div
-            class="prediction__container prediction__container_point_2 width_s"
-          >
-            <div class="border-bot">
-              <p
-                class="prediction__text prediction__text_point_2 text_color_white text_opacity_06"
-              >
-                Мы расскажем Вам не только подробности вашей смерти, но также
-                поможем Вам избежать этой ужасной даты и продлить вашу жизнь на
-                многие годы.
-              </p>
-            </div>
-            <p class="to-upper-case text text_type_m text_color_yellow">
-              Когда Вы чувствуете себя наиболее комфортно?
-            </p>
-            <button class="btn btn_size_m btn_color_yellow">Утро</button>
-            <button class="btn btn_size_m btn_color_yellow">День</button>
-            <button class="btn btn_size_m btn_color_yellow">Вечер</button>
-            <button class="btn btn_size_m btn_color_yellow">Ночь</button>
-            <p class="prediction__note text text_type_s text_color_white text_opacity_06">
-              Вопрос 2-5
-            </p>-->
-         </div>
-        </section>
-        <section id="section-predic" class="prediction prediction_point_2">
-          <div
-            class="prediction__container prediction__container_point_2 width_s"
-          >
-            <div class="border-bot">
-              <p
-                class="prediction__text prediction__text_point_2 text_color_white text_opacity_06"
-              >
-                Уже совсем скоро Вы узнаете много интересного о своем будущем!
-              </p>
-            </div>
-            <p class="to-upper-case text text_type_m text_color_yellow">
-              Укажите свою дату рождения:
-            </p>
-            <div class="select" id="day">
-              <div class="select__header">
-                <span class="select__current">День</span>
-              </div>
-              <div class="select__container">
-                <div id="body_days" class="select__body">
-                  <template class="template_item"><div class="select__item"></div></template>
-                </div>
-              </div>
-            </div>
-            <div class="select" id="month">
-              <div class="select__header">
-                <span class="select__current">Месяц</span>
-              </div>
-              <div class="select__container">
-                <div id="body_month" class="select__body">
-                </div>
-              </div>
-            </div>
-            <div class="select" id="year">
-              <div class="select__header">
-                <span class="select__current">Год</span>
-              </div>
-              <div class="select__container">
-                <div id="body_year" class="select__body">
-                </div>
-              </div>
-            </div>
-            <button class="btn btn_size_m btn_color_yellow">Далее</button>
-            <p class="prediction__note text text_type_s text_color_white text_opacity_06">
-              Вопрос 3-5
-            </p>
-          </div>
-        </section>
-        <!-- <section class="prediction prediction_point_2">
-          <div
-            class="prediction__container prediction__container_point_3 width_s"
-          >
-            <div class="border-bot">
-              <p
-                class="prediction__text prediction__text_point_2 text_color_white text_opacity_06"
-              >
-                Смерть родного человека – одно из тяжелейших испытаний в жизни
-                каждого из нас!
-              </p>
-            </div>
-            <p class="to-upper-case text text_type_m text_color_yellow">
-              Снятся ли Вам умершие люди?
-            </p>
-            <button class="btn btn_size_m btn_color_yellow">Да</button>
-            <button class="btn btn_size_m btn_color_yellow">Нет</button>
-            <button class="btn btn_size_m btn_color_yellow">Иногда</button>
-            <p class="prediction__note text text_type_s text_color_white text_opacity_06">
-              Вопрос 4-5
-            </p>
-          </div>
-        </section>
-        <section class="prediction prediction_point_2">
-          <div
-            class="prediction__container prediction__container_point_4 width_m"
-          >
-            <div class="border-bot">
-              <div class="massage prediction__massage">
-                <p class="prediction__text prediction__text_point_2">
-                  Спасибо за Ваши ответы! Мы подготовили для Вас персональную
-                  аудио запись с Вашим прогнозом.
+              <div class="border-bot">
+                <p
+                  class="prediction__text prediction__text_point_2 text_color_white text_opacity_06"
+                >
+                  Мы расскажем Вам не только подробности вашей смерти, но также
+                  поможем Вам избежать этой ужасной даты и продлить вашу жизнь
+                  на многие годы.
                 </p>
               </div>
+              <p class="to-upper-case text text_type_m text_color_yellow">
+                Когда Вы чувствуете себя наиболее комфортно?
+              </p>
+              <button class="btn btn_size_m btn_color_yellow">Утро</button>
+              <button class="btn btn_size_m btn_color_yellow">День</button>
+              <button class="btn btn_size_m btn_color_yellow">Вечер</button>
+              <button class="btn btn_size_m btn_color_yellow">Ночь</button>
+              <p
+                class="prediction__note text text_type_s text_color_white text_opacity_06"
+              >
+                Вопрос 2-5
+              </p>
             </div>
-            <p class="to-upper-case text text_type_m text_color_yellow">
-              Запись, которую Вы услышите, может шокировать людей с неокрепшей
-              психикой. Вы готовы узнать, что ждет именно Вас?
-            </p>
-            <button class="btn btn_size_m btn_color_yellow">Да</button>
-            <button class="btn btn_size_m btn_color_yellow">
-              Затрудняюсь ответить
-            </button>
-            <p class="prediction__note text text_type_s text_color_white text_opacity_06">
-              Вопрос 5-5
-            </p>
           </div>
-        </section>
-                <section class="final">
-          <div class="massage">
-            <p class="text final__massage">
-              Спасибо за Ваши ответы!
-              <span class="final__massage_span">
-                Мы подготовили для Вас персональную аудио запись с вашим
-                прогнозом.</span
-              >
-            </p>
-          </div>
-          <p class="text final__text text_color_white">
-            Вы можете узнать, как повлиять на события, которые ожидают вас в
-            ближайшем будущем.
-          </p>
-          <div class="final__container">
-            <p class="text final__alert text_color_yellow">
-              <span class="final__alert_span to-upper-case">
-                Первое значимое событие может произойти уже 14.02.2021,</span
-              >
-              Вам надо быть готовым, что бы последствия не оказались
-              необратимыми.
-            </p>
-          </div>
-          <p class="text final__text text_color_white">
-            Нажмите на кнопку ниже прямо сейчас и наберите наш номер телефона.
-            Прослушайте важную информацию!
-          </p>
-          <button class="btn btn_size_l btn_color_green">
-            Позвонить и прослушать
-          </button>
-        </section>-->
-        <!--   <section class="loading loader">
-          <img
-            class="loading__spinner"
-            src="./images/spinner.svg"
-            alt="загрузка"
-          />
-          <p class="text text_type_s text_color_white text_opacity_06">Loading</p>
-        </section> -->
-        <!-- <section class="record loader">
-          <div class="record__container">
-            <img
-              class="record__image"
-              src="./images/microphone.svg"
-              alt="микрофон"
-            />
-            <progress class="record__progress" value="50" max="100"></progress>
-            <p class="record__value text text_color_white text_opacity_06">
-              50%
-            </p>
-            <p
-              class="record__text text text_type_s text_color_white text_opacity_06"
+        </template>
+        <template id="predict-3">
+          <div class="prediction prediction_point_2">
+            <div
+              class="prediction__container prediction__container_point_2 width_s"
             >
-              Запись сообщения
+              <div class="border-bot">
+                <p
+                  class="prediction__text prediction__text_point_2 text_color_white text_opacity_06"
+                >
+                  Уже совсем скоро Вы узнаете много интересного о своем будущем!
+                </p>
+              </div>
+              <p class="to-upper-case text text_type_m text_color_yellow">
+                Укажите свою дату рождения:
+              </p>
+              <div class="select" id="day">
+                <div class="select__header"><p>День</p></div>
+                <div class="select__container">
+                  <div id="body_days" class="select__body">
+                    <template class="template_item"
+                      ><div class="select__item"></div
+                    ></template>
+                  </div>
+                </div>
+              </div>
+              <div class="select" id="month">
+                <div class="select__header"><p>Месяц</p></div>
+                <div class="select__container">
+                  <div id="body_month" class="select__body"></div>
+                </div>
+              </div>
+              <div class="select" id="year">
+                <div class="select__header"><p>Год</p></div>
+                <div class="select__container">
+                  <div id="body_year" class="select__body"></div>
+                </div>
+              </div>
+              <button class="btn btn_size_m btn_color_yellow">Далее</button>
+              <p
+                class="prediction__note text text_type_s text_color_white text_opacity_06"
+              >
+                Вопрос 3-5
+              </p>
+            </div>
+          </div>
+        </template>
+        <template id="predict-4">
+          <div class="prediction prediction_point_2">
+            <div
+              class="prediction__container prediction__container_point_3 width_s"
+            >
+              <div class="border-bot">
+                <p
+                  class="prediction__text prediction__text_point_2 text_color_white text_opacity_06"
+                >
+                  Смерть родного человека – одно из тяжелейших испытаний в жизни
+                  каждого из нас!
+                </p>
+              </div>
+              <p class="to-upper-case text text_type_m text_color_yellow">
+                Снятся ли Вам умершие люди?
+              </p>
+              <button class="btn btn_size_m btn_color_yellow">Да</button>
+              <button class="btn btn_size_m btn_color_yellow">Нет</button>
+              <button class="btn btn_size_m btn_color_yellow">Иногда</button>
+              <p
+                class="prediction__note text text_type_s text_color_white text_opacity_06"
+              >
+                Вопрос 4-5
+              </p>
+            </div>
+          </div>
+        </template>
+        <template id="predict-5">
+          <div class="prediction prediction_point_2">
+            <div
+              class="prediction__container prediction__container_point_4 width_m"
+            >
+              <div class="border-bot">
+                <div class="massage prediction__massage">
+                  <p class="prediction__text prediction__text_point_2">
+                    Спасибо за Ваши ответы! Мы подготовили для Вас персональную
+                    аудио запись с Вашим прогнозом.
+                  </p>
+                </div>
+              </div>
+              <p class="to-upper-case text text_type_m text_color_yellow">
+                Запись, которую Вы услышите, может шокировать людей с неокрепшей
+                психикой. Вы готовы узнать, что ждет именно Вас?
+              </p>
+              <button class="btn btn_size_m btn_color_yellow">Да</button>
+              <button class="btn btn_size_m btn_color_yellow">
+                Затрудняюсь ответить
+              </button>
+              <p
+                class="prediction__note text text_type_s text_color_white text_opacity_06"
+              >
+                Вопрос 5-5
+              </p>
+            </div>
+          </div>
+        </template>
+        <template id="final">
+          <div class="final">
+            <div class="massage">
+              <p class="text final__massage">
+                Спасибо за Ваши ответы!
+                <span class="final__massage_span">
+                  Мы подготовили для Вас персональную аудио запись с вашим
+                  прогнозом.</span
+                >
+              </p>
+            </div>
+            <p class="text final__text text_color_white">
+              Вы можете узнать, как повлиять на события, которые ожидают вас в
+              ближайшем будущем.
+            </p>
+            <div class="final__container">
+              <p class="text final__alert text_color_yellow">
+                <span class="final__alert_span to-upper-case">
+                  Первое значимое событие может произойти уже 14.02.2021,</span
+                >
+                Вам надо быть готовым, что бы последствия не оказались
+                необратимыми.
+              </p>
+            </div>
+            <p class="text final__text text_color_white">
+              Нажмите на кнопку ниже прямо сейчас и наберите наш номер телефона.
+              Прослушайте важную информацию!
+            </p>
+            <button class="btn btn_size_l btn_color_green">
+              Позвонить и прослушать
+            </button>
+          </div>
+        </template>
+        <template id="loading">
+          <div class="loading loader">
+            <img
+              class="loading__spinner"
+              src="./images/spinner.svg"
+              alt="загрузка"
+            />
+            <p class="text text_type_s text_color_white text_opacity_06">
+              Loading
             </p>
           </div>
-        </section> -->
+        </template>
+        <template id="record">
+          <div class="record loader">
+            <div class="record__container">
+              <img
+                class="record__image"
+                src="./images/microphone.svg"
+                alt="микрофон"
+              />
+              <progress
+                class="record__progress"
+                value="50"
+                max="100"
+              ></progress>
+              <p class="record__value text text_color_white text_opacity_06">
+                50%
+              </p>
+              <p
+                class="record__text text text_type_s text_color_white text_opacity_06"
+              >
+                Запись сообщения
+              </p>
+            </div>
+          </div>
+        </template>
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text text to-upper-case">
@@ -272,6 +306,7 @@
     </div>
     <script type="module" src="./utils/constants.js"></script>
     <script type="module" src="./components/Section.js"></script>
+    <script type="module" src="./components/renderPredict3.js"></script>
     <script type="module" src="./pages/index.js"></script>
   </body>
 </html>

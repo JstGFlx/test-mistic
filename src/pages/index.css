@@ -13,8 +13,6 @@
 @import '../blocks/text/_opacity/text_opacity_06.css';
 @import '../blocks/header/header.css';
 @import '../blocks/header/__title/header__title.css';
-@import '../blocks/spinner/spinner.css';
-@import '../blocks';
 @import '../blocks/forecast/forecast.css';
 @import '../blocks/btn/btn.css';
 @import '../blocks/btn/_color/btn_color_yellow.css';
@@ -27,7 +25,6 @@
 @import '../blocks/forecast/__image/forecast__image.css';
 @import '../blocks/forecast/__text/forecast__text.css';
 @import '../blocks/forecast/__title/forecast__title.css';
-@import '../blocks/forecast/__note/forecast__note.css';
 @import '../blocks/advice/advice.css';
 @import '../blocks/advice/__container/advice__container.css';
 @import '../blocks/advice/__text/advice__text.css';
@@ -42,7 +39,6 @@
 @import '../blocks/prediction/__text/_point/prediction__text_point_1.css';
 @import '../blocks/prediction/__text/_point/prediction__text_point_2.css';
 @import '../blocks/prediction/__rune/prediction__rune.css';
-@import '../blocks/prediction/__note/prediction__note.css';
 @import '../blocks/prediction/__container/prediction__container.css';
 @import '../blocks/prediction/__container/_point/prediction__container_point_1.css';
 @import '../blocks/prediction/__container/_point/prediction__container_point_2.css';
@@ -50,7 +46,6 @@
 @import '../blocks/prediction/__container/_point/prediction__container_point_4.css';
 @import '../blocks/massage/massage.css';
 @import '../blocks/border-bot/border-bot.css';
-@import '../blocks/footer/footer.css';
 @import '../blocks/footer/__text/footer__text.css';
 @import '../blocks/footer/__container/footer__container.css';
 @import '../blocks/select/select.css';
@@ -59,10 +54,8 @@
 @import '../blocks/select/__header/select__header.css';
 @import '../blocks/select/__header/_opened/select__header_opened.css';
 @import '../blocks/select/__body/select__body.css';
-@import '../blocks/select/__current/select__current.css';
 @import '../blocks/select/__container/select__container.css';
 @import '../blocks/loader/loader.css';
-@import '../blocks/loading/loading.css';
 @import '../blocks/loading/__spinner/loading__spinner.css';
 @import '../blocks/final/final.css';
 @import '../blocks/final/__text/final__text.css';
@@ -71,9 +64,7 @@
 @import '../blocks/final/__container/final__container.css';
 @import '../blocks/final/__alert/final__alert.css';
 @import '../blocks/final/__alert/_span/final__alert_span.css';
-@import '../blocks/record/record.css';
 @import '../blocks/record/__container/record__container.css';
 @import '../blocks/record/__value/record__value.css';
 @import '../blocks/record/__text/record__text.css';
 @import '../blocks/record/__progress/record__progress.css';
-@import '../blocks/record/__image/record__image.css';

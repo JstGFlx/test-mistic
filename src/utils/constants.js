@@ -152,30 +152,17 @@ const YEARS = [
   '1901',
   '1900',
 ];
-
-const selectDay = document.querySelector('#day');
-const selectDayHeader = selectDay.querySelector('.select__header');
-const selectDayBody = selectDay.querySelector('.select__container');
-const selectMonth = document.querySelector('#month');
-const selectMonthHeader = selectMonth.querySelector('.select__header');
-const selectMonthBody = selectMonth.querySelector('.select__container');
-const selectYear = document.querySelector('#year');
-const selectYearHeader = selectYear.querySelector('.select__header');
-const selectYearBody = selectYear.querySelector('.select__container');
-const templateItem = document.querySelector('.template_item');
+const predictions = document.querySelector('.predictions');
+const btnsPredict1 = predictions.querySelectorAll('.btn');
+const templatePredict2 = document.querySelector('#predict-2');
+const templatePredict3 = document.querySelector('#predict-3');
 
 export {
   DAYS,
   MONTH,
   YEARS,
-  selectDay,
-  selectDayHeader,
-  selectDayBody,
-  selectMonth,
-  selectMonthHeader,
-  selectMonthBody,
-  selectYear,
-  selectYearHeader,
-  selectYearBody,
-  templateItem,
+  predictions,
+  btnsPredict1,
+  templatePredict2,
+  templatePredict3,
 };
