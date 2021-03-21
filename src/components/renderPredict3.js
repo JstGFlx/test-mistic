@@ -9,7 +9,6 @@ import Section from '../components/Section.js';
 import SelectValidator from '../components/SelectValidator.js';
 import SelectItem from '../components/SelectItem.js';
 import { renderLoading } from '../components/renderLoading.js';
-import { renderPredict4 } from '../components/renderPredict4.js';
 
 export const renderPredict3 = () => {
   const predictElement = templatePredict3.content
@@ -114,7 +113,7 @@ export const renderPredict3 = () => {
   const validatorYear = new SelectValidator(selectYearHeader);
 
   const getDateOfBirth = () => {
-    return `${selectDayHeader.textContent}.${selectMonthHeader.textContent}.${selectYearHeader.textContent}`;
+    return `${selectYearHeader.textContent}/${selectMonthHeader.textContent}/${selectDayHeader.textContent}`;
   };
 
   yearList.renderItems(YEARS);

@@ -157,6 +157,7 @@ const btnsPredict1 = predictions.querySelectorAll('.btn');
 const templatePredict2 = document.querySelector('#predict-2');
 const templatePredict3 = document.querySelector('#predict-3');
 const templatePredict4 = document.querySelector('#predict-4');
+const templatePredict5 = document.querySelector('#predict-5');
 const templateLoading = document.querySelector('#loading');
 
 export {
@@ -168,5 +169,6 @@ export {
   templatePredict2,
   templatePredict3,
   templatePredict4,
+  templatePredict5,
   templateLoading,
 };

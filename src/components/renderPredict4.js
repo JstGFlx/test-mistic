@@ -5,10 +5,9 @@ export const renderPredict4 = (date) => {
   const predictElement = templatePredict4.content
     .querySelector('.prediction')
     .cloneNode(true);
-  console.log(date);
   predictions.append(predictElement);
-  const btnsPredict2 = predictions.querySelectorAll('.btn');
-  btnsPredict2.forEach((btn) => {
+  const btnsPredict4 = predictions.querySelectorAll('.btn');
+  btnsPredict4.forEach((btn) => {
     btn.addEventListener('click', () => {
       renderPredict5(date);
     });
