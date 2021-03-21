@@ -37,7 +37,7 @@ export const renderPredict3 = () => {
           {
             handleItemClick: () => {
               closeAllSelects();
-              validatorDay.checkSelectValidity();
+              validatorDay.setSelectValidStatus();
             },
           }
         );
@@ -57,7 +57,7 @@ export const renderPredict3 = () => {
           {
             handleItemClick: () => {
               closeAllSelects();
-              validatorMonth.checkSelectValidity();
+              validatorMonth.setSelectValidStatus();
             },
           }
         );
@@ -77,7 +77,7 @@ export const renderPredict3 = () => {
           {
             handleItemClick: () => {
               closeAllSelects();
-              validatorYear.checkSelectValidity();
+              validatorYear.setSelectValidStatus();
             },
           }
         );
@@ -111,7 +111,13 @@ export const renderPredict3 = () => {
   const validatorMonth = new SelectValidator(selectMonthHeader);
   const validatorYear = new SelectValidator(selectYearHeader);
 
-  const collectSelectData = () => {};
+  const renderPredict4 = (date) => {
+    console.log(date);
+  };
+
+  const getDateOfBirth = () => {
+    return `${selectDayHeader.textContent}.${selectMonthHeader.textContent}.${selectYearHeader.textContent}`;
+  };
 
   yearList.renderItems(YEARS);
   monthList.renderItems(MONTH);
@@ -130,8 +136,17 @@ export const renderPredict3 = () => {
   });
 
   btnsPredict3.addEventListener('click', () => {
-    validatorDay.checkSelectValidity();
-    validatorMonth.checkSelectValidity();
-    validatorYear.checkSelectValidity();
+    validatorDay.setSelectValidStatus();
+    validatorMonth.setSelectValidStatus();
+    validatorYear.setSelectValidStatus();
+    if (
+      !(
+        validatorDay.checkInvalidSelect() ||
+        validatorMonth.checkInvalidSelect() ||
+        validatorYear.checkInvalidSelect()
+      )
+    ) {
+      renderPredict4(getDateOfBirth());
+    }
   });
 };

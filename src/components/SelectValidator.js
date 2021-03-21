@@ -11,12 +11,12 @@ export default class SelectValidator {
     select.classList.remove('select_not-filling');
   }
 
-  _checkInvalidSelect() {
+  checkInvalidSelect() {
     return isNaN(Number(this._select.textContent));
   }
 
-  checkSelectValidity() {
-    if (this._checkInvalidSelect(this._select)) {
+  setSelectValidStatus() {
+    if (this.checkInvalidSelect()) {
       this._showError(this._select);
     } else {
       this._hideError(this._select);
