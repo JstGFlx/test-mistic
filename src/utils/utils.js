@@ -27,11 +27,19 @@ const toggleSelect = (selectBody, selectHeader) => {
   }
 };
 
-const createSelectItem = (template, itemText) => {
+const createSelectItem = (template, itemText, header) => {
   const selectItem = template.content
     .querySelector('.select__item')
     .cloneNode(true);
-  selectItem.textContent = itemText;
+  header === selectMonthHeader
+    ? (selectItem.textContent = itemText[0])
+    : (selectItem.textContent = itemText);
+  selectItem.addEventListener('click', () => {
+    header === selectMonthHeader
+      ? (header.textContent = itemText[1])
+      : (header.textContent = itemText);
+    closeAllSelects();
+  });
   return selectItem;
 };
 

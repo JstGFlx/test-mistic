@@ -16,7 +16,11 @@ import { toggleSelect, createSelectItem } from '../utils/utils.js';
 const daysList = new Section(
   {
     renderer: (itemText) => {
-      const selectItem = createSelectItem(templateItem, itemText);
+      const selectItem = createSelectItem(
+        templateItem,
+        itemText,
+        selectDayHeader
+      );
       daysList.appendItem(selectItem);
     },
   },
@@ -26,7 +30,11 @@ const daysList = new Section(
 const monthList = new Section(
   {
     renderer: (itemText) => {
-      const selectItem = createSelectItem(templateItem, itemText);
+      const selectItem = createSelectItem(
+        templateItem,
+        itemText,
+        selectMonthHeader
+      );
       monthList.appendItem(selectItem);
     },
   },
@@ -36,7 +44,11 @@ const monthList = new Section(
 const yearList = new Section(
   {
     renderer: (itemText) => {
-      const selectItem = createSelectItem(templateItem, itemText);
+      const selectItem = createSelectItem(
+        templateItem,
+        itemText,
+        selectYearHeader
+      );
       yearList.appendItem(selectItem);
     },
   },
