@@ -144,9 +144,8 @@ export const renderPredict3 = () => {
         validatorYear.checkInvalidSelect()
       )
     ) {
-      renderLoading().then((res) => {
-        console.log(res);
-      });
+      const userDateOfBirth = getDateOfBirth();
+      renderLoading(userDateOfBirth);
     }
   });
 };
