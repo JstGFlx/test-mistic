@@ -1,12 +1,24 @@
 .select__container {
   display: none;
-  max-height: 172px;
+  max-height: 107px;
   width: 100%;
   position: absolute;
   background: #bebebf;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.425);
   overflow-y: scroll;
   z-index: 5;
+}
+
+@media (min-width: 321px) {
+  .select__container {
+    max-height: calc(107px + (199 - 107) * ((100vw - 320px) / (1440 - 321)));
+  }
+}
+
+@media (min-width: 1440px) {
+  .select__container {
+    max-height: 199px;
+  }
 }
 
 .select__container::-webkit-scrollbar {

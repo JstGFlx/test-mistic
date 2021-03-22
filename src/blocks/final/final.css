@@ -10,7 +10,7 @@
     grid-template-rows:
       calc(121px + (257 - 121) * ((100vw - 321px) / (1440 - 321)))
       calc(84px + (99 - 84) * ((100vw - 321px) / (1440 - 321))) auto
-      calc(106px + (89 - 106) * ((100vw - 321px) / (1440 - 321)))
+      calc(106px + (69 - 106) * ((100vw - 321px) / (1440 - 321)))
       calc(48px + (168 - 48) * ((100vw - 321px) / (1440 - 321)))
       calc(24px + (15 - 24) * ((100vw - 321px) / (1440 - 321)));
   }
@@ -18,6 +18,6 @@
 
 @media (min-width: 1440px) {
   .final {
-    grid-template-rows: 257px 99px auto 89px 168px 9px;
+    grid-template-rows: 257px 99px auto 69px 186px 1fr;
   }
 }
