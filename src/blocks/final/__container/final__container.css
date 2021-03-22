@@ -2,10 +2,8 @@
   border: 1px solid #ffffff;
   box-sizing: border-box;
   border-radius: 3px;
-  padding: 13px 15px;
-  box-sizing: content-box;
-  margin: 4px 0;
-  min-height: 194px;
+  padding: 2px 15px 2px;
+  min-height: 161px;
 }
 
 @media (min-width: 321px) {
