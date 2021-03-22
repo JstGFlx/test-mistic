@@ -8,3 +8,18 @@ export const getAge = (dateString) => {
   }
   return age;
 };
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+export const getPersonData = () => {
+  return fetch(`https://swapi.dev/api/people/${getRandomInt(1, 89)}/`).then(
+    (res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      return Promise.reject(`Ошибка: ${res.status}`);
+    }
+  );
+};
