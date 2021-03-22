@@ -16,7 +16,7 @@
 
 ---
 
-### [cсылка на проект](https://jstgflx.github.io/mesto/)
+### [cсылка на проект](https://jstgflx.github.io/test-mistic/)
 
 ---
 
