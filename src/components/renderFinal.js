@@ -7,19 +7,14 @@ export const renderFinal = () => {
     .cloneNode(true);
   const buttonCall = finalElement.querySelector('.btn');
   const alert = finalElement.querySelector('#alert');
-  const alertSpan = finalElement.querySelector('.final__alert_span');
   predictions.firstElementChild.remove();
   predictions.append(finalElement);
 
   const setAlertText = (text, isOk) => {
-    if (isOk) {
-      alert.textContent = `Вы можете встретить: ${text.name}, ростом: ${text.height}. `;
-      alertSpan.textContent = `Вам надо быть готовым, чтобы последствия не оказались
-    необратимыми.`;
-    } else {
-      alertSpan.textContent = `Что то пошло не так`;
-      alert.textContent = `${text}, Нажмите еще раз на кнопку`;
-    }
+    isOk
+      ? (alert.textContent = `Вы можете встретить: ${text.name}, ростом: ${text.height}. Вам надо быть готовым, чтобы последствия не оказались
+      необратимыми.`)
+      : (alert.textContent = `Что то пошло не так ${text}, Нажмите еще раз на кнопку`);
   };
 
   buttonCall.addEventListener('click', () => {
