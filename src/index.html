@@ -7,7 +7,6 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./pages/index.css" />
     <title>Дата смерти</title>
   </head>
   <body class="body">
@@ -79,7 +78,7 @@
               </p>
               <img
                 class="prediction__rune"
-                src="./images/rune1.svg"
+                src="<%=require('./images/rune1.svg')%>"
                 alt="Руна"
               />
               <p
@@ -90,7 +89,7 @@
               </p>
               <img
                 class="prediction__rune"
-                src="./images/rune2.svg"
+                src="<%=require('./images/rune2.svg')%>"
                 alt="Руна"
               />
             </div>
@@ -262,7 +261,7 @@
           <div class="loading loader">
             <img
               class="loading__spinner"
-              src="./images/spinner.svg"
+              src="<%=require('./images/spinner.svg')%>"
               alt="загрузка"
             />
             <p class="text text_type_s text_color_white text_opacity_06">
@@ -275,7 +274,7 @@
             <div class="record__container">
               <img
                 class="record__image"
-                src="./images/microphone.svg"
+                src="<%=require('./images/microphone.svg')%>"
                 alt="микрофон"
               />
               <progress class="record__progress" value="0" max="100"></progress>
@@ -300,6 +299,5 @@
         </footer>
       </main>
     </div>
-    <script type="module" src="./pages/index.js"></script>
   </body>
 </html>
