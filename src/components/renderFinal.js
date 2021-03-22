@@ -14,7 +14,7 @@ export const renderFinal = () => {
   const setAlertText = (text, isOk) => {
     if (isOk) {
       alert.textContent = `Вы можете встретить: ${text.name}, ростом: ${text.height}. `;
-      alertSpan.textContent = `Вам надо быть готовым, что бы последствия не оказались
+      alertSpan.textContent = `Вам надо быть готовым, чтобы последствия не оказались
     необратимыми.`;
     } else {
       alertSpan.textContent = `Что то пошло не так`;
